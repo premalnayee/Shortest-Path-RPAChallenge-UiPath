@@ -77,7 +77,7 @@
       </sap:WorkflowViewStateService.ViewState>
       <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take Screenshot 'IMG'" sap:VirtualizedContainerService.HintSize="590,106" sap2010:WorkflowViewState.IdRef="TakeScreenshot_1" Screenshot="[temp3]">
         <ui:TakeScreenshot.Target>
-          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9fc720b2-2620-4a31-8949-55b57a056c48" InformativeScreenshot="63762c2351b28499ada4a25da6ce7b21" Selector="&lt;html app='chrome.exe' title='Automation Challenge' /&gt;&#xD;&#xA;&lt;webctrl parentid='demand_tbody' tableRow='3' tag='IMG' /&gt;&#xD;&#xA;">
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9fc720b2-2620-4a31-8949-55b57a056c48" InformativeScreenshot="e5a12d332b841a05a1ddbb81fec500d5" Selector="&lt;html app='chrome.exe' title='Automation Challenge' /&gt;&lt;webctrl parentid='demand_tbody' tableRow='10' tag='IMG' /&gt;">
             <ui:Target.TimeoutMS>
               <InArgument x:TypeArguments="x:Int32" />
             </ui:Target.TimeoutMS>

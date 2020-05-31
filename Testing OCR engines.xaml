@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Testing_OCR_engines" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="572,5446" sap2010:WorkflowViewState.IdRef="Testing_OCR_engines_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:ui1="clr-namespace:UiPathTeam.ImageFilterDespeckleActivities;assembly=ImageFilterDespeckleActivities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Testing_OCR_engines" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="572,3393" sap2010:WorkflowViewState.IdRef="Testing_OCR_engines_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:ui1="clr-namespace:UiPathTeam.ImageFilterDespeckleActivities;assembly=ImageFilterDespeckleActivities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="23">
       <x:String>System.Activities</x:String>
@@ -54,29 +54,28 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Testing_OCR_engines" sap:VirtualizedContainerService.HintSize="544,5281" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Testing_OCR_engines" sap:VirtualizedContainerService.HintSize="476,3228" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(Of String)]" Name="numberToFieldName" />
-      <Variable x:TypeArguments="s:String[]" Default="[{&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;}]" Name="scrapeFields" />
-      <Variable x:TypeArguments="s:String[]" Default="[{&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;}]" Name="scrapeFieldsRow" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Screen Scraping and filling for demand details" sap:VirtualizedContainerService.HintSize="502,1935" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="Screen Scraping and filling for demand details" sap:VirtualizedContainerService.HintSize="434,1044" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Int32" Default="3" Name="item" />
         <Variable x:TypeArguments="x:Int32" Name="webTableRow" />
         <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(Of String)]" Name="compareList" />
+        <Variable x:TypeArguments="s:String[]" Default="[{&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;}]" Name="scrapeFields" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="This is essentially a lookup list: later on this list is going to be used to figure out which fields are which, where:&#xA;0 - Name&#xA;1 - Address 1&#xA;2 - Address 2 &#xA;3 - City &#xA;4 - State&#xA;5 - Zip Code &#xA;6 - Shipping date&#xA;7 - Shipping preference&#xA;8 - Cargo&#xA;9 - Cargo Preference" sap:VirtualizedContainerService.HintSize="392,288" sap2010:WorkflowViewState.IdRef="Sequence_13">
+      <Sequence sap2010:Annotation.AnnotationText="This is essentially a lookup list: later on this list is going to be used to figure out which fields are which, where:&#xA;0 - Name&#xA;1 - Address 1&#xA;2 - Address 2 &#xA;3 - City &#xA;4 - State&#xA;5 - Zip Code &#xA;6 - Shipping date&#xA;7 - Shipping preference&#xA;8 - Cargo&#xA;9 - Cargo Preference" sap:VirtualizedContainerService.HintSize="376,288" sap2010:WorkflowViewState.IdRef="Sequence_13">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -95,7 +94,7 @@
         <AddToCollection x:TypeArguments="x:String" Collection="[compareList]" DisplayName="Cargo - Add To Collection" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_9" Item="Cargo|Cargo." />
         <AddToCollection x:TypeArguments="x:String" Collection="[compareList]" DisplayName="Cargo Preference - Add To Collection" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_10" Item="Cargo preference|Cargo Preference|Cargo Preference" />
       </Sequence>
-      <Sequence sap2010:Annotation.AnnotationText="Not an image, so must be done separately" DisplayName="Get Name - Sequence" sap:VirtualizedContainerService.HintSize="392,229" sap2010:WorkflowViewState.IdRef="Sequence_24">
+      <Sequence sap2010:Annotation.AnnotationText="Not an image, so must be done separately" DisplayName="Get Name - Sequence" sap:VirtualizedContainerService.HintSize="376,229" sap2010:WorkflowViewState.IdRef="Sequence_24">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -118,7 +117,7 @@
           </ui:GetFullText.Text>
         </ui:GetFullText>
       </Sequence>
-      <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each row in table find the name of the field using OCR and write a number to a list (scrapedFieldsRows) to refelct this" sap:VirtualizedContainerService.HintSize="392,942" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[Enumerable.Range(3,9)]">
+      <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each row in table find the name of the field using OCR and write a number to a list (scrapedFieldsRows) to refelct this" sap:VirtualizedContainerService.HintSize="376,51" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[Enumerable.Range(3,9)]">
         <ui:ForEach.Body>
           <ActivityAction x:TypeArguments="x:Int32">
             <ActivityAction.Argument>
@@ -190,7 +189,7 @@
                         </Assign>
                         <ui:SaveImage DisplayName="Save Image" FileName="[PreProcessFieldFileName]" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="SaveImage_2" Image="[PreProcessField]" />
                         <ui1:ImageDespeckle DespeckleSize="5" DespeckleThreshold="15" DisplayName="Image despeckle" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="ImageDespeckle_1" ImagePath="[PreProcessFieldFileName]" ResultImage="[PostProcessField]" ResultImagePath="[&quot;images to despeckle\web_table_row_&quot; + webTableRow.ToString + &quot;_post_despeckle.png&quot;]" />
-                        <TryCatch DisplayName="OCR - Try catch" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                        <TryCatch DisplayName="OCR - Try catch" sap:VirtualizedContainerService.HintSize="438,287" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -201,10 +200,10 @@
                             <ui:MicrosoftOCR FilterRegion="{x:Null}" Language="{x:Null}" Output="{x:Null}" ComputeSkewAngle="False" DisplayName="Microsoft OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="MicrosoftOCR_6" Image="[PostProcessField]" Profile="Screen" Scale="2" Text="[microOut]" />
                           </TryCatch.Try>
                           <TryCatch.Catches>
-                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,130" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_3">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
@@ -251,33 +250,33 @@
                     </TryCatch.Catches>
                   </TryCatch>
                   <WriteLine DisplayName="Show th OCR output Write Line" sap:VirtualizedContainerService.HintSize="230,61" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[&quot;OCR Output:&quot; + microOut]" />
-                  <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each possible field iterate over a string of possible values" sap:VirtualizedContainerService.HintSize="230,51" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[Enumerable.Range(0,9)]">
+                  <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each possible field iterate over a string of possible values" sap:VirtualizedContainerService.HintSize="677,1000" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[Enumerable.Range(0,9)]">
                     <ui:ForEach.Body>
                       <ActivityAction x:TypeArguments="x:Int32">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Int32" Name="fieldNum" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="641,966" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="641,866" sap2010:WorkflowViewState.IdRef="Sequence_15">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each possible value of field (there are multiple possible values as OCR is not 100 %" sap:VirtualizedContainerService.HintSize="599,874" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[compareList(fieldNum).Split({&quot;|&quot;},  StringSplitOptions.None).ToArray]">
+                          <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each possible value of field (there are multiple possible values as OCR is not 100 %" sap:VirtualizedContainerService.HintSize="599,774" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[compareList(fieldNum).Split({&quot;|&quot;},  StringSplitOptions.None).ToArray]">
                             <ui:ForEach.Body>
                               <ActivityAction x:TypeArguments="x:String">
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="x:String" Name="compareStr" />
                                 </ActivityAction.Argument>
-                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="563,740" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="563,640" sap2010:WorkflowViewState.IdRef="Sequence_14">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <If Condition="[compareStr.Equals(microOut)]" sap:VirtualizedContainerService.HintSize="521,648" sap2010:WorkflowViewState.IdRef="If_2">
+                                  <If Condition="[compareStr.Equals(microOut)]" sap:VirtualizedContainerService.HintSize="521,548" sap2010:WorkflowViewState.IdRef="If_2">
                                     <If.Then>
-                                      <Sequence sap:VirtualizedContainerService.HintSize="376,500" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                      <Sequence sap:VirtualizedContainerService.HintSize="376,400" sap2010:WorkflowViewState.IdRef="Sequence_16">
                                         <Sequence.Variables>
                                           <Variable x:TypeArguments="s:String[]" Name="firstStr" />
                                           <Variable x:TypeArguments="x:String" Name="firstFieldStr" />
@@ -287,14 +286,6 @@
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_4">
-                                          <Assign.To>
-                                            <OutArgument x:TypeArguments="x:String">[scrapeFieldsRow(fieldNum)]</OutArgument>
-                                          </Assign.To>
-                                          <Assign.Value>
-                                            <InArgument x:TypeArguments="x:String">[webTableRow.ToString]</InArgument>
-                                          </Assign.Value>
-                                        </Assign>
                                         <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_11" Text="[&quot;Matched field num: &quot; +fieldNum.ToString +  &quot; to row: &quot; + webTableRow.ToString + &quot; in the web table&quot;]" />
                                         <ui:GetFullText IgnoreHidden="{x:Null}" DisplayName="Get Full Text 'TD'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetFullText_1">
                                           <ui:GetFullText.Target>
@@ -336,12 +327,12 @@
         </ui:ForEach.Body>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:ForEach>
-      <Sequence DisplayName="Quite simply, fill in the demand form Fields Sequence" sap:VirtualizedContainerService.HintSize="392,264" sap2010:WorkflowViewState.IdRef="Sequence_18">
+      <Sequence DisplayName="Quite simply, fill in the demand form Fields Sequence" sap:VirtualizedContainerService.HintSize="376,264" sap2010:WorkflowViewState.IdRef="Sequence_18">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -354,7 +345,7 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into First Name Demand" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[scrapeFields(0)]">
+          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Type Into First Name Demand" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" SimulateType="True" Text="[scrapeFields(0)]">
             <ui:TypeInto.Target>
               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="745d3920-0561-4c41-8a21-05fc562093b1" InformativeScreenshot="f85bbdafe3859a20645375d8d43baacc" Selector="&lt;html app='chrome.exe' title='Automation Challenge' /&gt;&#xA;&lt;webctrl aaname='Name' parentid='gamecontainer' tag='SPAN' idx='1' /&gt;&#xA;&lt;nav up='1' /&gt;&#xA;&lt;webctrl tag='INPUT' parentid='gamecontainer' /&gt;&#xA;">
                 <ui:Target.TimeoutMS>
@@ -366,7 +357,7 @@
               </ui:Target>
             </ui:TypeInto.Target>
           </ui:TypeInto>
-          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into Address 1 Demand" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[scrapeFields(1)]">
+          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Type Into Address 1 Demand" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" SimulateType="True" Text="[scrapeFields(1)]">
             <ui:TypeInto.Target>
               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="268a329b-4df0-484d-9cae-1a0b622de2c4" InformativeScreenshot="288dde4ec511115fdb096b45300c8049" Selector="&lt;html app='chrome.exe' title='Automation Challenge' /&gt;&#xA;&lt;webctrl aaname='Address' parentid='gamecontainer' tag='SPAN' idx='1' /&gt;&#xA;&lt;nav up='1' /&gt;&#xA;&lt;webctrl tag='INPUT' /&gt;&#xA;">
                 <ui:Target.TimeoutMS>
@@ -378,7 +369,7 @@
               </ui:Target>
             </ui:TypeInto.Target>
           </ui:TypeInto>
-          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into Address 2 Demand" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="[scrapeFields(2)]">
+          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Type Into Address 2 Demand" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_3" SimulateType="True" Text="[scrapeFields(2)]">
             <ui:TypeInto.Target>
               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="15107734-11e6-449c-b132-cbcfbefb2329" InformativeScreenshot="017fe711b5aa0fbd2d36e90afe645d95" Selector="&lt;html app='chrome.exe' title='Automation Challenge' /&gt;&#xA;&lt;webctrl aaname='Address-2' parentid='gamecontainer' tag='SPAN' idx='1' /&gt;&#xA;&lt;nav up='1' /&gt;&#xA;&lt;webctrl tag='INPUT' /&gt;&#xA;">
                 <ui:Target.TimeoutMS>
@@ -390,7 +381,7 @@
               </ui:Target>
             </ui:TypeInto.Target>
           </ui:TypeInto>
-          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into City" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_4" Text="[scrapeFields(3)]">
+          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Type Into City" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_4" SimulateType="True" Text="[scrapeFields(3)]">
             <ui:TypeInto.Target>
               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="78528c4b-76e8-458a-b2ad-eda7b3364cdc" InformativeScreenshot="f18473d258783847c141f523d480693f" Selector="&lt;html app='chrome.exe' title='Automation Challenge' /&gt;&#xA;&lt;webctrl aaname='City' parentid='gamecontainer' tag='SPAN' idx='1' /&gt;&#xA;&lt;nav up='1' /&gt;&#xA;&lt;webctrl tag='INPUT' /&gt;&#xA;">
                 <ui:Target.TimeoutMS>
@@ -402,7 +393,7 @@
               </ui:Target>
             </ui:TypeInto.Target>
           </ui:TypeInto>
-          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into Zip" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_5" Text="[scrapeFields(5)]">
+          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Type Into Zip" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_5" SimulateType="True" Text="[scrapeFields(5)]">
             <ui:TypeInto.Target>
               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="977f7fcb-6090-4bec-84a8-49bc2481b4dc" InformativeScreenshot="84f109413e2cfe0c15932aef54be44a2" Selector="&lt;html app='chrome.exe' title='Automation Challenge' /&gt;&#xA;&lt;webctrl aaname='Zip' tag='LABEL' idx='1' /&gt;&#xA;&lt;nav up='1' /&gt;&#xA;&lt;webctrl tag='INPUT' /&gt;&#xA;">
                 <ui:Target.TimeoutMS>
@@ -420,7 +411,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click drop down" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click drop down" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="False">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -717,7 +708,7 @@
         </Sequence>
       </Sequence>
     </Sequence>
-    <Sequence DisplayName="Screen Scraping and filling for supply details" sap:VirtualizedContainerService.HintSize="502,3214" sap2010:WorkflowViewState.IdRef="Sequence_37">
+    <Sequence DisplayName="Screen Scraping and filling for supply details" sap:VirtualizedContainerService.HintSize="434,1946" sap2010:WorkflowViewState.IdRef="Sequence_37">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Int32" Default="3" Name="item" />
         <Variable x:TypeArguments="x:Int32" Name="webTableRow" />
@@ -726,13 +717,18 @@
             <mva:VisualBasicValue x:TypeArguments="scg:List(x:String)" ExpressionText="new List(Of String)" />
           </Variable.Default>
         </Variable>
+        <Variable x:TypeArguments="s:String[]" Name="scrapeFieldsSupply">
+          <Variable.Default>
+            <mva:VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="{}{&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;}" />
+          </Variable.Default>
+        </Variable>
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="This is essentially a lookup list: later on this list is going to be used to figure out which fields are which, where:&#xA;0 - Name&#xA;1 - Address 1&#xA;2 - Address 2 &#xA;3 - City &#xA;4 - State&#xA;5 - Zip Code &#xA;6 - Shipping date&#xA;7 - Shipping preference&#xA;8 - Cargo&#xA;9 - Cargo Preference" sap:VirtualizedContainerService.HintSize="460,288" sap2010:WorkflowViewState.IdRef="Sequence_25">
+      <Sequence sap2010:Annotation.AnnotationText="This is essentially a lookup list: later on this list is going to be used to figure out which fields are which, where:&#xA;0 - Name&#xA;1 - Address 1&#xA;2 - Address 2 &#xA;3 - City &#xA;4 - State&#xA;5 - Zip Code &#xA;6 - Shipping date&#xA;7 - Shipping preference&#xA;8 - Cargo&#xA;9 - Cargo Preference" sap:VirtualizedContainerService.HintSize="392,288" sap2010:WorkflowViewState.IdRef="Sequence_25">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -747,7 +743,7 @@
         <AddToCollection x:TypeArguments="x:String" Collection="[compareListSupply]" DisplayName="State - Add To Collection" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_15" Item="State" />
         <AddToCollection x:TypeArguments="x:String" Collection="[compareListSupply]" DisplayName="Zip Code - Add To Collection" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_16" Item="Zip Code|Zip Code." />
       </Sequence>
-      <Sequence sap2010:Annotation.AnnotationText="Not an image, so must be done separately" DisplayName="Get Name - Sequence" sap:VirtualizedContainerService.HintSize="460,229" sap2010:WorkflowViewState.IdRef="Sequence_26">
+      <Sequence sap2010:Annotation.AnnotationText="Not an image, so must be done separately" DisplayName="Get Name - Sequence" sap:VirtualizedContainerService.HintSize="392,229" sap2010:WorkflowViewState.IdRef="Sequence_26">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -767,11 +763,11 @@
             </ui:Target>
           </ui:GetFullText.Target>
           <ui:GetFullText.Text>
-            <OutArgument x:TypeArguments="x:String">[scrapeFields(0)]</OutArgument>
+            <OutArgument x:TypeArguments="x:String">[scrapeFieldsSupply(0)]</OutArgument>
           </ui:GetFullText.Text>
         </ui:GetFullText>
       </Sequence>
-      <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each row in table find the name of the field using OCR and write a number to a list (scrapedFieldsRows) to refelct this" sap:VirtualizedContainerService.HintSize="460,1059" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[Enumerable.Range(3,5)]">
+      <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each row in table find the name of the field using OCR and write a number to a list (scrapedFieldsRows) to refelct this" sap:VirtualizedContainerService.HintSize="392,1059" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[Enumerable.Range(3,5)]">
         <ui:ForEach.Body>
           <ActivityAction x:TypeArguments="x:Int32">
             <ActivityAction.Argument>
@@ -813,7 +809,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <TryCatch.Try>
-                      <Sequence sap:VirtualizedContainerService.HintSize="476,825" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                      <Sequence sap:VirtualizedContainerService.HintSize="480,929" sap2010:WorkflowViewState.IdRef="Sequence_27">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="ui:Image" Name="PreProcessField" />
                           <Variable x:TypeArguments="x:String" Name="PreProcessFieldFileName" />
@@ -825,7 +821,7 @@
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:TakeScreenshot DisplayName="Take Screenshot 'IMG'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="TakeScreenshot_2" Screenshot="[PreProcessField]" WaitBefore="0">
+                        <ui:TakeScreenshot DisplayName="Take Screenshot 'IMG'" sap:VirtualizedContainerService.HintSize="438,106" sap2010:WorkflowViewState.IdRef="TakeScreenshot_2" Screenshot="[PreProcessField]" WaitBefore="0">
                           <ui:TakeScreenshot.Target>
                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d99960f1-4f25-44ae-9740-28f32ab8deb8" InformativeScreenshot="63762c2351b28499ada4a25da6ce7b21" Selector="&lt;html app='chrome.exe' title='Automation Challenge' /&gt;&#xD;&#xA;&lt;webctrl parentid='supply_tbody' tableRow='{{webTableRow}}' tag='IMG' /&gt;&#xD;&#xA;" TimeoutMS="5000">
                               <ui:Target.WaitForReady>
@@ -834,7 +830,7 @@
                             </ui:Target>
                           </ui:TakeScreenshot.Target>
                         </ui:TakeScreenshot>
-                        <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+                        <Assign sap:VirtualizedContainerService.HintSize="438,60" sap2010:WorkflowViewState.IdRef="Assign_6">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[PreProcessFieldFileName]</OutArgument>
                           </Assign.To>
@@ -842,9 +838,9 @@
                             <InArgument x:TypeArguments="x:String">["images to despeckle\web_table_row_" + webTableRow.ToString + ".png"]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <ui:SaveImage DisplayName="Save Image" FileName="[PreProcessFieldFileName]" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="SaveImage_3" Image="[PreProcessField]" />
-                        <ui1:ImageDespeckle DespeckleSize="5" DespeckleThreshold="15" DisplayName="Image despeckle" sap:VirtualizedContainerService.HintSize="434,132" sap2010:WorkflowViewState.IdRef="ImageDespeckle_2" ImagePath="[PreProcessFieldFileName]" ResultImage="[PostProcessField]" ResultImagePath="[&quot;images to despeckle\web_table_row_&quot; + webTableRow.ToString + &quot;_post_despeckle.png&quot;]" />
-                        <TryCatch DisplayName="OCR - Try catch" sap:VirtualizedContainerService.HintSize="434,183" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                        <ui:SaveImage DisplayName="Save Image" FileName="[PreProcessFieldFileName]" sap:VirtualizedContainerService.HintSize="438,92" sap2010:WorkflowViewState.IdRef="SaveImage_3" Image="[PreProcessField]" />
+                        <ui1:ImageDespeckle DespeckleSize="5" DespeckleThreshold="15" DisplayName="Image despeckle" sap:VirtualizedContainerService.HintSize="438,132" sap2010:WorkflowViewState.IdRef="ImageDespeckle_2" ImagePath="[PreProcessFieldFileName]" ResultImage="[PostProcessField]" ResultImagePath="[&quot;images to despeckle\web_table_row_&quot; + webTableRow.ToString + &quot;_post_despeckle.png&quot;]" />
+                        <TryCatch DisplayName="OCR - Try catch" sap:VirtualizedContainerService.HintSize="438,287" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -855,7 +851,7 @@
                             <ui:MicrosoftOCR FilterRegion="{x:Null}" Language="{x:Null}" Output="{x:Null}" ComputeSkewAngle="False" DisplayName="Microsoft OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="MicrosoftOCR_7" Image="[PostProcessField]" Profile="Screen" Scale="2" Text="[microOut]" />
                           </TryCatch.Try>
                           <TryCatch.Catches>
-                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_4">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -874,7 +870,7 @@
                       </Sequence>
                     </TryCatch.Try>
                     <TryCatch.Catches>
-                      <Catch x:TypeArguments="s:NullReferenceException" sap:VirtualizedContainerService.HintSize="480,21" sap2010:WorkflowViewState.IdRef="Catch`1_5">
+                      <Catch x:TypeArguments="s:NullReferenceException" sap:VirtualizedContainerService.HintSize="484,21" sap2010:WorkflowViewState.IdRef="Catch`1_5">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -888,7 +884,7 @@
                           <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230,61" sap2010:WorkflowViewState.IdRef="WriteLine_20" Text="[&quot;Error finding row &quot; + webTableRow.ToString]" />
                         </ActivityAction>
                       </Catch>
-                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="480,21" sap2010:WorkflowViewState.IdRef="Catch`1_6">
+                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="484,21" sap2010:WorkflowViewState.IdRef="Catch`1_6">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -905,33 +901,33 @@
                     </TryCatch.Catches>
                   </TryCatch>
                   <WriteLine DisplayName="Show th OCR output Write Line" sap:VirtualizedContainerService.HintSize="230,61" sap2010:WorkflowViewState.IdRef="WriteLine_22" Text="[&quot;OCR Output:&quot; + microOut]" />
-                  <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Take the OCR output for each field and compare the result to compareListSupply, which has the possible values for all field, then get the text from the corresponding row and assign it to scrapeFields" DisplayName="For Each possible field iterate over a string of possible values" sap:VirtualizedContainerService.HintSize="230,168" sap2010:WorkflowViewState.IdRef="ForEach`1_6" Values="[Enumerable.Range(0,9)]">
+                  <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Take the OCR output for each field and compare the result to compareListSupply, which has the possible values for all field, then get the text from the corresponding row and assign it to scrapeFields" DisplayName="For Each possible field iterate over a string of possible values" sap:VirtualizedContainerService.HintSize="230,168" sap2010:WorkflowViewState.IdRef="ForEach`1_6" Values="[Enumerable.Range(0,5)]">
                     <ui:ForEach.Body>
                       <ActivityAction x:TypeArguments="x:Int32">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Int32" Name="fieldNum" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="641,966" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="641,866" sap2010:WorkflowViewState.IdRef="Sequence_30">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each possible value of field (there are multiple possible values as OCR is not 100 %" sap:VirtualizedContainerService.HintSize="599,874" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[compareListSupply(fieldNum).Split({&quot;|&quot;},  StringSplitOptions.None).ToArray]">
+                          <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each possible value of field (there are multiple possible values as OCR is not 100 %" sap:VirtualizedContainerService.HintSize="599,774" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[compareListSupply(fieldNum).Split({&quot;|&quot;},  StringSplitOptions.None).ToArray]">
                             <ui:ForEach.Body>
                               <ActivityAction x:TypeArguments="x:String">
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="x:String" Name="compareStr" />
                                 </ActivityAction.Argument>
-                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="563,740" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="563,640" sap2010:WorkflowViewState.IdRef="Sequence_29">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <If Condition="[compareStr.Equals(microOut)]" sap:VirtualizedContainerService.HintSize="521,648" sap2010:WorkflowViewState.IdRef="If_5">
+                                  <If Condition="[compareStr.Equals(microOut)]" sap:VirtualizedContainerService.HintSize="521,548" sap2010:WorkflowViewState.IdRef="If_5">
                                     <If.Then>
-                                      <Sequence sap:VirtualizedContainerService.HintSize="376,500" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                      <Sequence sap:VirtualizedContainerService.HintSize="376,400" sap2010:WorkflowViewState.IdRef="Sequence_28">
                                         <Sequence.Variables>
                                           <Variable x:TypeArguments="s:String[]" Name="firstStr" />
                                           <Variable x:TypeArguments="x:String" Name="firstFieldStr" />
@@ -941,18 +937,10 @@
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_7">
-                                          <Assign.To>
-                                            <OutArgument x:TypeArguments="x:String">[scrapeFieldsRow(fieldNum)]</OutArgument>
-                                          </Assign.To>
-                                          <Assign.Value>
-                                            <InArgument x:TypeArguments="x:String">[webTableRow.ToString]</InArgument>
-                                          </Assign.Value>
-                                        </Assign>
                                         <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_23" Text="[&quot;Matched field num: &quot; +fieldNum.ToString +  &quot; to row: &quot; + webTableRow.ToString + &quot; in the web table&quot;]" />
                                         <ui:GetFullText IgnoreHidden="{x:Null}" DisplayName="Get Full Text 'TD'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetFullText_4">
                                           <ui:GetFullText.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="117aa33e-6f40-4785-9319-42b529c1952c" InformativeScreenshot="bf4855c0c2e9c33a0799fe677e310fb8" Selector="&lt;html app='chrome.exe' title='Automation Challenge' /&gt;&#xD;&#xA;&lt;webctrl id='supply_table' tag='TABLE' /&gt;&#xD;&#xA;&lt;webctrl isleaf='1' tableRow='3' tag='TD' parentid='supply_tbody' /&gt;&#xD;&#xA;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="117aa33e-6f40-4785-9319-42b529c1952c" InformativeScreenshot="bf4855c0c2e9c33a0799fe677e310fb8" Selector="&lt;html app='chrome.exe' title='Automation Challenge' /&gt;&lt;webctrl id='supply_table' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tableRow='{{webTableRow}}' tag='TD' parentid='supply_tbody' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -962,10 +950,10 @@
                                             </ui:Target>
                                           </ui:GetFullText.Target>
                                           <ui:GetFullText.Text>
-                                            <OutArgument x:TypeArguments="x:String">[scrapeFields(fieldNum)]</OutArgument>
+                                            <OutArgument x:TypeArguments="x:String">[scrapeFieldsSupply(fieldNum)]</OutArgument>
                                           </ui:GetFullText.Text>
                                         </ui:GetFullText>
-                                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_24" Text="[&quot;Got the following text: &quot; + scrapeFields(fieldNum)]" />
+                                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_24" Text="[&quot;Got the following text: &quot; + scrapeFieldsSupply(fieldNum)]" />
                                       </Sequence>
                                     </If.Then>
                                   </If>
@@ -996,20 +984,20 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:ForEach>
-      <Sequence DisplayName="Quite simply, fill in the demand form Fields Sequence" sap:VirtualizedContainerService.HintSize="460,1426" sap2010:WorkflowViewState.IdRef="Sequence_36">
+      <Sequence DisplayName="Quite simply, fill in the demand form Fields Sequence" sap:VirtualizedContainerService.HintSize="392,158" sap2010:WorkflowViewState.IdRef="Sequence_36">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Sequence DisplayName="Fill in name, address 1/2, city, zip and state- Sequence" sap:VirtualizedContainerService.HintSize="418,1334" sap2010:WorkflowViewState.IdRef="Sequence_35">
+        <Sequence DisplayName="Fill in name, address 1/2, city, zip and state- Sequence" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_35">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into First Name Demand" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_9" Text="[scrapeFields(0)]">
+          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Type Into First Name Demand" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_9" SimulateType="True" Text="[scrapeFieldsSupply(0)]">
             <ui:TypeInto.Target>
               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="745d3920-0561-4c41-8a21-05fc562093b1" InformativeScreenshot="f85bbdafe3859a20645375d8d43baacc" Selector="&lt;html app='chrome.exe' title='Automation Challenge' /&gt;&#xD;&#xA;&lt;webctrl tag='H5' aaname='Origin (Supplier)' /&gt;&#xD;&#xA;&lt;nav up='2' /&gt;&#xD;&#xA;&lt;webctrl tag='INPUT' idx='1' /&gt;&#xD;&#xA;">
                 <ui:Target.TimeoutMS>
@@ -1021,7 +1009,7 @@
               </ui:Target>
             </ui:TypeInto.Target>
           </ui:TypeInto>
-          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into Address 1 Demand" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_10" Text="[scrapeFields(1)]">
+          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Type Into Address 1 Demand" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_10" SimulateType="True" Text="[scrapeFieldsSupply(1)]">
             <ui:TypeInto.Target>
               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="268a329b-4df0-484d-9cae-1a0b622de2c4" InformativeScreenshot="288dde4ec511115fdb096b45300c8049" Selector="&lt;html app='chrome.exe' title='Automation Challenge' /&gt;&#xD;&#xA;&lt;webctrl aaname='Address' parentid='gamecontainer' tag='SPAN' idx='2' /&gt;&#xD;&#xA;&lt;nav up='1' /&gt;&#xD;&#xA;&lt;webctrl tag='INPUT' /&gt;&#xD;&#xA;">
                 <ui:Target.TimeoutMS>
@@ -1033,7 +1021,7 @@
               </ui:Target>
             </ui:TypeInto.Target>
           </ui:TypeInto>
-          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into Address 2 Demand" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_11" Text="[scrapeFields(2)]">
+          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Type Into Address 2 Demand" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_11" SimulateType="True" Text="[scrapeFieldsSupply(2)]">
             <ui:TypeInto.Target>
               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="15107734-11e6-449c-b132-cbcfbefb2329" InformativeScreenshot="017fe711b5aa0fbd2d36e90afe645d95" Selector="&lt;html app='chrome.exe' title='Automation Challenge' /&gt;&#xD;&#xA;&lt;webctrl aaname='Address-2' parentid='gamecontainer' tag='SPAN' idx='2' /&gt;&#xD;&#xA;&lt;nav up='1' /&gt;&#xD;&#xA;&lt;webctrl tag='INPUT' /&gt;&#xD;&#xA;">
                 <ui:Target.TimeoutMS>
@@ -1045,7 +1033,7 @@
               </ui:Target>
             </ui:TypeInto.Target>
           </ui:TypeInto>
-          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into City" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_12" Text="[scrapeFields(3)]">
+          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Type Into City" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_12" SimulateType="True" Text="[scrapeFieldsSupply(3)]">
             <ui:TypeInto.Target>
               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="78528c4b-76e8-458a-b2ad-eda7b3364cdc" InformativeScreenshot="f18473d258783847c141f523d480693f" Selector="&lt;html app='chrome.exe' title='Automation Challenge' /&gt;&#xD;&#xA;&lt;webctrl aaname='City' parentid='gamecontainer' tag='SPAN' idx='2' /&gt;&#xD;&#xA;&lt;nav up='1' /&gt;&#xD;&#xA;&lt;webctrl tag='INPUT' /&gt;&#xD;&#xA;">
                 <ui:Target.TimeoutMS>
@@ -1057,7 +1045,7 @@
               </ui:Target>
             </ui:TypeInto.Target>
           </ui:TypeInto>
-          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into Zip" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_13" Text="[scrapeFields(5)]">
+          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Type Into Zip" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_13" SimulateType="True" Text="[scrapeFieldsSupply(5)]">
             <ui:TypeInto.Target>
               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="977f7fcb-6090-4bec-84a8-49bc2481b4dc" InformativeScreenshot="84f109413e2cfe0c15932aef54be44a2" Selector="&lt;html app='chrome.exe' title='Automation Challenge' /&gt;&#xD;&#xA;&lt;webctrl aaname='Zip' tag='LABEL' idx='2' /&gt;&#xD;&#xA;&lt;nav up='1' /&gt;&#xD;&#xA;&lt;webctrl tag='INPUT' /&gt;&#xD;&#xA;">
                 <ui:Target.TimeoutMS>
@@ -1075,7 +1063,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click drop down" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click drop down" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -1097,7 +1085,7 @@
                 </ui:Target>
               </ui:Click.Target>
             </ui:Click>
-            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into State drop down" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_14" Text="[scrapeFields(4) + &quot;[k(enter)]&quot;]">
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Type Into State drop down" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_14" SimulateType="True" Text="[scrapeFieldsSupply(4) + &quot;[k(enter)]&quot;]">
               <ui:TypeInto.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="19c2af50-b1bd-452f-b1f8-0ec548de7b70" InformativeScreenshot="cc2b9d88dc8c407a6507af9b36c00fe3" Selector="&lt;html app='chrome.exe' title='Automation Challenge' /&gt;&#xD;&#xA;&lt;webctrl aaname='State' tag='LABEL' idx='2' /&gt;&#xD;&#xA;&lt;nav up='1' /&gt;&#xD;&#xA;&lt;webctrl tag='SELECT' /&gt;&#xD;&#xA;">
                   <ui:Target.TimeoutMS>
@@ -1112,6 +1100,89 @@
           </Sequence>
         </Sequence>
       </Sequence>
+    </Sequence>
+    <Sequence DisplayName="Click submit and create button - Sequence" sap:VirtualizedContainerService.HintSize="376,763" sap2010:WorkflowViewState.IdRef="Sequence_38">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="ContractNum" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Click OK when ready to submit form and create&quot;]" />
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Submit" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a5bd62ea-3786-4032-b434-8b6e3ff99afa" InformativeScreenshot="44518b76cd75c272053d00567a61a555" Selector="&lt;html app='chrome.exe' title='Automation Challenge' /&gt;&#xD;&#xA;&lt;webctrl aaname='Submit Form' tag='BUTTON' type='button' parentid='contract_table' /&gt;&#xD;&#xA;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:GetFullText IgnoreHidden="{x:Null}" DisplayName="Get Contract number" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetFullText_5">
+        <ui:GetFullText.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d91d8f41-f71c-42a0-ba19-71eccf60fb25" InformativeScreenshot="b5b33b3637903023fa5c849682f0bd41" Selector="&lt;html app='chrome.exe' title='Automation Challenge' /&gt;&lt;webctrl id='CTRNR' tag='SPAN' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:GetFullText.Target>
+        <ui:GetFullText.Text>
+          <OutArgument x:TypeArguments="x:String">[ContractNum]</OutArgument>
+        </ui:GetFullText.Text>
+      </ui:GetFullText>
+      <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Type into contract number box" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_15" SimulateType="True" Text="[ContractNum]">
+        <ui:TypeInto.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b995c312-4b00-45cf-9644-42e9775014b8" InformativeScreenshot="f01b8e905753caac72e8dca963b7a5bd" Selector="&lt;html app='chrome.exe' title='Automation Challenge' /&gt;&#xD;&#xA;&lt;webctrl tag='INPUT' parentid='contract_table' /&gt;&#xD;&#xA;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:TypeInto.Target>
+      </ui:TypeInto>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="084aa52c-622d-4a57-acaa-6235604635b5" InformativeScreenshot="f46e0f1a8c5fc313ca04714bee408053" Selector="&lt;html app='chrome.exe' title='Automation Challenge' /&gt;&#xD;&#xA;&lt;webctrl aaname='Create' tag='BUTTON' type='button' parentid='contract_table' /&gt;&#xD;&#xA;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
     </Sequence>
   </Sequence>
 </Activity>
